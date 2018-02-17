@@ -19,7 +19,7 @@ void factorialTest()
 
 void calcChangeTest()
 {
-	int numCoins = 3;
+	const int numCoins = 3;
 	int coinValues[numCoins] = {1, 2, 5};
 
 
@@ -27,12 +27,12 @@ void calcChangeTest()
 	ASSERT_EQUAL("5;5;5;1;",calcChange(16, numCoins, coinValues));
 	ASSERT_EQUAL("",calcChange(0, numCoins, coinValues));
 
-	int numCoins2 = 2;
+	const int numCoins2 = 2;
 	int coinValues2[numCoins2] = {2, 5};
 	ASSERT_EQUAL("-", calcChange(1, numCoins2, coinValues2));
 	ASSERT_EQUAL("5;2;",calcChange(7, numCoins2, coinValues2));
 
-	int numCoins3 = 3;
+	const int numCoins3 = 3;
 	int coinValues3[numCoins3] = {1, 4, 5};
 	ASSERT_EQUAL("4;4;",calcChange(8, numCoins3, coinValues3));
 
