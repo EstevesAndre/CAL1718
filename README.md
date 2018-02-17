@@ -1,2 +1,7 @@
+# FEUP - MIEIC
+
+2º Year - 2º Semester
+
 # CAL1718
-MIEIC - FEUP   CAL - 2017/2018
+CAL - Algorithms Analisys and Conception
+Programming language used: C/C++
