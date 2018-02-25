@@ -2,15 +2,7 @@
 	<testsuite name="AllTests" tests="4">
 		<testcase classname="AllTests" name="factorialTest"/>
 		<testcase classname="AllTests" name="calcChangeTest"/>
-		<testcase classname="AllTests" name="calcSumArrayTest">
-			<failure message="d:\feup\mieic\2ano\cal\praticas\cal1718\p01\test.cpp:47 calcSumArrayTest: &quot;1,4;9,1;11,2;18,1;22,0;&quot; == calcSum(sequence, 5) expected:	1,4;9,1;11,2;18,1;22,0;	but was:	1,4;9,2;11,4;18,4;22,0;	">
-calcSumArrayTest: &quot;1,4;9,1;11,2;18,1;22,0;&quot; == calcSum(sequence, 5) expected:	1,4;9,1;11,2;18,1;22,0;	but was:	1,4;9,2;11,4;18,4;22,0;	
-			</failure>
-		</testcase>
-		<testcase classname="AllTests" name="partitioningTest">
-			<failure message="d:\feup\mieic\2ano\cal\praticas\cal1718\p01\test.cpp:53 partitioningTest: 3025 == s_recursive(9,3) expected:	3025	but was:	1	">
-partitioningTest: 3025 == s_recursive(9,3) expected:	3025	but was:	1	
-			</failure>
-		</testcase>
+		<testcase classname="AllTests" name="calcSumArrayTest"/>
+		<testcase classname="AllTests" name="partitioningTest"/>
 	</testsuite>
 </testsuites>
