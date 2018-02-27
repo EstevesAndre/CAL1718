@@ -1,8 +1,16 @@
-﻿  Partitioning.cpp
-d:\feup\mieic\2ano\cal\praticas\cal1718\p01\partitioning.cpp(19): warning C4018: '<=': signed/unsigned mismatch
-d:\feup\mieic\2ano\cal\praticas\cal1718\p01\partitioning.cpp(27): warning C4018: '<=': signed/unsigned mismatch
-d:\feup\mieic\2ano\cal\praticas\cal1718\p01\partitioning.cpp(41): warning C4018: '<=': signed/unsigned mismatch
-d:\feup\mieic\2ano\cal\praticas\cal1718\p01\partitioning.cpp(52): warning C4018: '<=': signed/unsigned mismatch
-d:\feup\mieic\2ano\cal\praticas\cal1718\p01\partitioning.cpp(14): warning C4715: 's_recursive': not all control paths return a value
-  P01.vcxproj -> D:\FEUP\MIEIC\2ano\CAL\Praticas\CAL1718\P01\Debug\P01.exe
-  P01.vcxproj -> D:\FEUP\MIEIC\2ano\CAL\Praticas\CAL1718\P01\Debug\P01.pdb (Full PDB)
+﻿  Test.cpp
+  Sum.cpp
+d:\feup\mieic\2ano\2_semestre\cal\cal1718\p01\sum.cpp(13): warning C4018: '<': signed/unsigned mismatch
+d:\feup\mieic\2ano\2_semestre\cal\cal1718\p01\sum.cpp(20): warning C4018: '<': signed/unsigned mismatch
+d:\feup\mieic\2ano\2_semestre\cal\cal1718\p01\sum.cpp(25): warning C4018: '<': signed/unsigned mismatch
+  Partitioning.cpp
+d:\feup\mieic\2ano\2_semestre\cal\cal1718\p01\partitioning.cpp(19): warning C4018: '<=': signed/unsigned mismatch
+d:\feup\mieic\2ano\2_semestre\cal\cal1718\p01\partitioning.cpp(27): warning C4018: '<=': signed/unsigned mismatch
+d:\feup\mieic\2ano\2_semestre\cal\cal1718\p01\partitioning.cpp(41): warning C4018: '<=': signed/unsigned mismatch
+d:\feup\mieic\2ano\2_semestre\cal\cal1718\p01\partitioning.cpp(52): warning C4018: '<=': signed/unsigned mismatch
+  Factorial.cpp
+  Change.cpp
+d:\feup\mieic\2ano\2_semestre\cal\cal1718\p01\change.cpp(21): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+d:\feup\mieic\2ano\2_semestre\cal\cal1718\p01\partitioning.cpp(14): warning C4715: 's_recursive': not all control paths return a value
+  P01.vcxproj -> D:\FEUP\MIEIC\2ano\2_Semestre\CAL\CAL1718\P01\Debug\P01.exe
