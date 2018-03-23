@@ -172,12 +172,58 @@ bool Graph<T>::addEdge(const T &sourc, const T &dest, double w) {
 template<class T>
 void Graph<T>::dijkstraShortestPath(const T &origin) {
 	// TODO
+	for (Vertex<T>* v : vertexSet)
+	{
+		v->dist = DBL_MAX;
+		v->path = NULL;
+	}
+	
+	Vertex<T>* vertex = findVertex(origin);
+	vertex->dist = 0;
+
+	MutablePriorityQueue<Vertex<T> > queue;
+	queue.insert(vertex);
+
+	while (!queue.empty())
+	{
+		Vertex<T> *min = queue.extractMin();
+		for (Edge<T> w : min->adj)
+		{
+			Vertex<T> *v2 = w.dest;
+			if (v2->dist > min->dist + w.weight)
+			{
+				double oldDist = v2->dist;
+				v2->dist = min->dist + w.weight;
+				v2->path = min;
+				if (oldDist == DBL_MAX)
+					queue.insert(v2);
+				else
+					queue.decreaseKey(v2);
+			}
+		}
+	}
 }
 
 template<class T>
 vector<T> Graph<T>::getPath(const T &origin, const T &dest) const{
-	vector<T> res;
-	// TODO
+	vector<T> res,res_aux;
+
+	Vertex<T>* o = findVertex(origin);
+	Vertex<T>* d = findVertex(dest);
+	
+	while (d != o)
+	{
+		res_aux.push_back(d->info);
+		d = d->path;
+	}
+
+	res_aux.push_back(d->info);
+
+	for (int i = res_aux.size() - 1; i >= 0; i--)
+	{
+		res.push_back(res_aux.at(i));
+	}
+
 	return res;
 }
 
