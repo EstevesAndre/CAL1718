@@ -1,3 +1,0 @@
-﻿  Sudoku.cpp
-d:\feup\mieic\2ano\2_semestre\cal\cal1718\p02\p02\sudoku.cpp(100): warning C4715: 'Sudoku::getunsolvedCell': not all control paths return a value
-  P02.vcxproj -> D:\FEUP\MIEIC\2ano\2_Semestre\CAL\CAL1718\P02\Debug\P02.exe
