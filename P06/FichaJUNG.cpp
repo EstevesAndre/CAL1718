@@ -16,7 +16,8 @@ void exercicio1()
 	gv->createWindow(600, 600);
 
 	gv->defineVertexColor("blue");
-	gv->defineEdgeColor("black");	int idNo = 0;	gv->addNode(idNo);
+	gv->defineEdgeColor("black");	int idNo = 0;	gv->addNode(1);	gv->addNode(1000);	gv->addNode(1323);	gv->addEdge(3, 1, 1000, EdgeType::DIRECTED);	gv->addEdge(4, 1323, 1000, EdgeType::DIRECTED);	gv->addEdge(5, 1, 1323, EdgeType::DIRECTED);
+	gv->setVertexLabel(4, "ANDRE GOMES");/*	gv->addNode(idNo);
 	idNo++;
 	gv->addNode(idNo);
 	gv->addEdge(0, 0, 1, EdgeType::UNDIRECTED);
@@ -30,7 +31,7 @@ void exercicio1()
 
 	gv->setVertexLabel(2, "MUNDIAL");
 	gv->setEdgeLabel(0, "VAI GANHAR");
-	gv->setVertexColor(2, "green");	gv->setEdgeColor(0, "yellow");
+	gv->setVertexColor(2, "green");	gv->setEdgeColor(0, "yellow");*/
 	gv->rearrange();
 
 }
@@ -113,8 +114,8 @@ void exercicio3()
 
 
 int main() {
-	//exercicio1();
-	exercicio2();
+	exercicio1();
+	//exercicio2();
 	//exercicio3();
 	getchar();
 	return 0;
