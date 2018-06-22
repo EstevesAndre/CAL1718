@@ -119,7 +119,6 @@ void Sudoku::putCell(int i,int j, int n)
 	block3x3HasNumber[i / 3][j / 3][n] = true;
 	countFilled++;
 }
-
 void Sudoku::freeCell(int i, int j, int n)
 {
 	numbers[i][j] = 0;
@@ -138,7 +137,9 @@ bool Sudoku::solveRec(int x, int y)
 
 	for (int i = 1; i <= 9; i++)
 	{
-		if (lineHasNumber[x][i] == false && columnHasNumber[y][i] == false && block3x3HasNumber[x / 3][y / 3][i] == false)
+		if (lineHasNumber[x][i] == false && 
+			columnHasNumber[y][i] == false &&
+			block3x3HasNumber[x / 3][y / 3][i] == false)
 		{
 			putCell(x, y, i);
 
@@ -164,7 +165,6 @@ void Sudoku::print()
 	{
 		for (int a = 0; a < 9; a++)
 			cout << this->numbers[i][a] << " ";
-
 		cout << endl;
 	}
 }

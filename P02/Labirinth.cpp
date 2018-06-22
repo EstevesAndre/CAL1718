@@ -38,8 +38,7 @@ void  Labirinth::printLabirinth()
 	}
 }
 
-bool Labirinth::findGoalRec(int x, int y)
-{
+bool Labirinth::findGoalRec(int x, int y) {
 	visited[x][y] = true;
 
 	if (labirinth[x][y] == 2)
@@ -48,34 +47,26 @@ bool Labirinth::findGoalRec(int x, int y)
 	}
 	if (labirinth[x - 1][y] != 0 && !visited[x - 1][y])
 	{
-		if (findGoalRec(x - 1, y))
-			return true;
+		if (findGoalRec(x - 1, y)) return true;
 	}
 	if (labirinth[x + 1][y] != 0 && !visited[x + 1][y])
 	{
-		if (findGoalRec(x + 1, y))
-			return true;
+		if (findGoalRec(x + 1, y)) return true;
 	}
 	if (labirinth[x][y+1] != 0 && !visited[x][y+1])
 	{
-		if (findGoalRec(x, y + 1))
-			return true;
+		if (findGoalRec(x, y + 1))	return true;
 	}
 	if (labirinth[x][y-1] != 0 && !visited[x][y-1])
 	{
-		if (findGoalRec(x, y - 1))
-			return true;
+		if (findGoalRec(x, y - 1)) return true;
 	}
-	else 
-		return false;
+	else  return false;
 }
 
-bool Labirinth::findGoal(int x, int y)
-{
-	this->initializeVisited();
-	
+bool Labirinth::findGoal(int x, int y){
+	this->initializeVisited();	
 	return findGoalRec(x, y);
-
 }
 
 
